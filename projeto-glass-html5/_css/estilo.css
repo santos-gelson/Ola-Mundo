@@ -10,9 +10,9 @@
      font-family: FonteLogo ;
     src: url("../_fonts/bubblegum-sans-regular.otf");
  }
-
+/* Para garantir que todos os textos não configurados de modo diferente tenha uma fonte não serifada vamos configurar esta característica na área body */
  body {
-               
+     font-family: Arial, sans-serif;          
     background-color: #dddddd;
         color: rgba(0, 0, 0,1);
 }
@@ -40,6 +40,22 @@ p {
     text-indent: 50px;
 
 }
+/* Configurar todos os links da página com cor escura e sem sublinhado (lembrando que 'a' é a ancora dos links) */
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+/* Fazendo com que toda vez que o maouse passe por cima do link este fique sublinhado */
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
 /* configuração do menu e de cabeçalhos e de interfaces */
 /* Reposicionar a imagem do óculos pequeno */
 
@@ -189,18 +205,131 @@ nav#menu a:hover {
 section#corpo {
 
     display: block; /*mostra área como um bloco*/
-    width: 520px;
+    width: 500px;
     float: left;
     border-right: 1px solid #606060 ;
     padding-right: 15px;
+    
+   
+}
+
+/* Formatação das configurações da tag <article> dentro da tag <section#corpo> */
+/* Formatação de titulos h2  */
+
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+/* Formatando o cabeçalho do artigo noticia-principal dos títulos h1, h2, e h3. */
+
+header#cabecalho-artigo h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+header#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    
+}
+header#cabecalho-artigo h3 {
+    font-size: 12pt;
+    color: #606060;
+}
+
+/* Formatação de uma classe genérica chamada . direita para resolver o conflito de duas formatação para h3 no mesmo artigo. */
+
+ .direita {
+    text-align: right;
+
+ }
+
+/* Criamos a aqui a formatação para a tabela */
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
 
 }
 
+/* Para modificar o <td> não precisamos modoficar nenhim parâmetro anterior em table#tabelaspec, vamos criar duas classe novas (table#tabelaespec td.ce {}) e (table#tabelaespec td.cd {}) */
+
+table#tabelaspec td.ce {
+    color:#ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd {
+    background-color: #cecece;
+    
+}
+/* Configurar o caption da (table#tabelaspec)*/
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+/* Configuração especifica para as tags <span> que altera parte do caption da tabelaespec. */
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+
+}
+
+/* Configurando a seção lateral aside */
 aside#lateral {
     display: block;
     width: 350px;
     float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
+
+/* Configurando os títulos h1, h2 e h3*/
+
+aside#lateral h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+}
+
+aside#lateral h3 {}
+
+
 
 footer#rodape {
     clear: both;

@@ -1,14 +1,68 @@
-Google Glass
-A revolução do Google está chegando
+ <!-- Tag para indicar site em HTML5-->
+ <!DOCTYPE html>
 
-[AQUI ENTRA UMA FOTO]
-
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+ <html lang=pt-br>
+ <!-- Implementando as áreas de cabeçalho <head> e <body>-->
+ 
+ <head>
+ <!-- conjunto de caracteres latino-->
+     <meta charset="UTF-8"/>
+ <!-- Colocar título na pagina <title-->
+     <title> Tudo sobre Google Glass</title>
+     <!--Área para formatação geral de estilos do texto em css3-->
+     <!-- Removemos a tag estilo do arquivo index e colocamos no arquivo estilo.css e indicamos aqui o caminho com tag <link>-->
+     <link rel="stylesheet"  href="_css/estilo.css"/>
+ 
+     <!-- liga o estilo em estilo.css na página index (o parâmetro type="text/css" agora é opcional e pode ser omitido-->
+   
+ 
+ <script language="javascript" src="_javascript/funcoes.js">  </script>
+ 
+ 
+ </head>
+ 
+ <body>
+ 
+ <!-- Criar uma divisão da página usando a tag <div> dentro da área body-->
+ <!-- Identicar esta div com <div id="interface"-->
+  <!-- Estamos criando uma delimitação para o site-->
+ 
+ <div
+  id="interface">
+ 
+ <!-- Identificado os títulos e suas hierarquias com <h1>, <h2>, <h3> ...-->
+ <!-- Como estes dois títulos pertence a um mesmo grupo, vamos agrupá-los com a tag <hgroup> Isto tem um significado semantico para o navegador mas não altera  formatação-->         
+     
+ <!-- Delimitando a área de cabeçalho observado o projeto; entre ===== --com a tag header>
+     <!-- ====== -->
+     <header id="cabecalho">
+     <hgroup>
+         <h1>Google Glass</h1>
+         <h2>A revolução do Google está chegando</h2>
+      
+     </hgroup>
+ 
+ <!-- Agora vamos inserir uma imagem com a tag <img src="_caminho/foto"-->
+ 
+ <!-- Identificando a imagem para poder manipulá-la com configurações css -->
+ <img id="icone" src="_imagens/glass-oculos-preto-peq.png"> 
+ 
+ <nav id=menu>
+ <!-- Construindo o menu-->
+ <!--Aperfeiçoando o menu ** menu flutuante-->
+ <h1>Menu Principal</h1>  
+ <ul>
+     <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png ')"><a href="index.html">Home</a></li>
+     <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/multimidia.png ')"><a href="specs.html">Especificações</a></li>
+     <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png ')"><a href="fotos.html">Fotos</a></li>
+     <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/multimidia.png ')"><a href="multimidia.html">Multimídia</a></li>
+     <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png ')"><a href="fale-conosco.html">Fale conosco</a></li>
+ </ul>
+ 
+ </nav>
+ 
+ <!--====== -->
+     </header>
 
 Glass > Multimídia
 Sons e Vídeos
@@ -21,5 +75,12 @@ Atualizado em 01/Maio/2013
 [AQUI ENTRA UM VÍDEO]
 [AQUI ENTRA UM ÁUDIO]
 
-Copyright 2013 - by Gustavo Guanabara
-Facebook | Twitter
+<footer id="rodape">
+
+    <p>Copyright &copy; 2013 - by Gustavo Guanabara <br>
+    <a href="http://Facebook.com/cursosemvideo" target="_blank"/a> Facebook | <a href="http://twitter.com/cursoemvideo" target="_blank"/a> Twitter</p>
+    
+    </footer>
+    </div>
+    </body>
+    </html>

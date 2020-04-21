@@ -1,23 +1,106 @@
-Google Glass
-A revolução do Google está chegando
+ <!-- Tag para indicar site em HTML5-->
+ <!DOCTYPE html>
 
-[AQUI ENTRA UMA FOTO]
+ <html lang=pt-br>
+ <!-- Implementando as áreas de cabeçalho <head> e <body>-->
+ 
+ <head>
+ <!-- conjunto de caracteres latino-->
+     <meta charset="UTF-8"/>
+ <!-- Colocar título na pagina <title-->
+     <title> Tudo sobre Google Glass</title>
+     <!--Área para formatação geral de estilos do texto em css3-->
+     <!-- Removemos a tag estilo do arquivo index e colocamos no arquivo estilo.css e indicamos aqui o caminho com tag <link>-->
+     <link rel="stylesheet"  href="_css/estilo.css"/>
+     <link rel="stylesheet" href="_css/specs.css"/>
+ 
+     <!-- liga o estilo em estilo.css na página index (o parâmetro type="text/css" agora é opcional e pode ser omitido-->
+   
+ 
+ <script language="javascript" src="_javascript/funcoes.js">  </script>
+ 
+ 
+ </head>
+ 
+ <body>
+ 
+ <!-- Criar uma divisão da página usando a tag <div> dentro da área body-->
+ <!-- Identicar esta div com <div id="interface"-->
+  <!-- Estamos criando uma delimitação para o site-->
+ 
+ <div
+  id="interface">
+ 
+ <!-- Identificado os títulos e suas hierarquias com <h1>, <h2>, <h3> ...-->
+ <!-- Como estes dois títulos pertence a um mesmo grupo, vamos agrupá-los com a tag <hgroup> Isto tem um significado semantico para o navegador mas não altera  formatação-->         
+     
+ <!-- Delimitando a área de cabeçalho observado o projeto; entre ===== --com a tag header>
+     <!-- ====== -->
+     <header id="cabecalho">
+     <hgroup>
+         <h1>Google Glass</h1>
+         <h2>A revolução do Google está chegando</h2>
+      
+     </hgroup>
+ 
+ <!-- Agora vamos inserir uma imagem com a tag <img src="_caminho/foto"-->
+ 
+ <!-- Identificando a imagem para poder manipulá-la com configurações css -->
+ <img id="icone" src="_imagens/glass-oculos-preto-peq.png"> 
+ 
+ <nav id=menu>
+ <!-- Construindo o menu-->
+ <!--Aperfeiçoando o menu ** menu flutuante-->
+ <h1>Menu Principal</h1>  
+ <ul>
+     <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/especificacoes.png ')"><a href="index.html">Home</a></li>
+     <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/especificacoes.png ')"><a href="specs.html">Especificações</a></li>
+     <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/especificacoes.png ')"><a href="fotos.html">Fotos</a></li>
+     <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/especificacoes.png ')"><a href="multimidia.html">Multimídia</a></li>
+     <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/especificacoes.png ')"><a href="fale-conosco.html">Fale conosco</a></li>
+ </ul>
+ 
+ </nav>
+ 
+ <!--====== -->
+     </header>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+<section id="corpo-full">
 
-Glass > Especificações
-Raio-X no Google Glass
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+    <article id=noticia-principal>
 
-Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
+        <!-- Criando um cabeçalho específico para a tag <hgroup para resolver o conflito da formatação h2 para a frase por Guanabara -->
+            <!-- A seçao tem um artigo e esse artigo tem um cabeçalho, vamos formatar esse cabeçalho.-->
+            <header id="cabecalho-artigo">
+                <hgroup>     
+                    <h3>Glass > Especificações</h3>
+                    <h1>Raio-X no Google Glass</h1>
+                    <h2>por Gustavo Guanabara </h2>
+                    <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+                </hgroup>
+            </header>
 
-[AQUI ENTRA UMA IMAGEM]
+     
+    
 
-Copyright 2013 - by Gustavo Guanabara<
-Facebook | Twitter
+
+    <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações. </p>
+    <section id="conteudo">
+
+        <img src="_imagens/glass-esquema-marcado.jpg"/>
+        <iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
+    </section>
+</article>
+ 
+</section>
+
+
+<footer id="rodape">
+
+    <p>Copyright &copy; 2013 - by Gustavo Guanabara <br>
+    <a href="http://Facebook.com/cursosemvideo" target="_blank"/a> Facebook | <a href="http://twitter.com/cursoemvideo" target="_blank"/a> Twitter</p>
+    
+    </footer>
+    </div>
+    </body>
+    </html>

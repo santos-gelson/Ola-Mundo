@@ -1,0 +1,26 @@
+@charset"UTF-8";
+/*
+body{
+    font-family: Arial;
+    font-size: 10pt;
+    /*overflow: hidden;*/
+}
+*/
+section#conteudo {
+    margin: auto;
+    width: 1000px;
+}
+
+iframe#frame-spec {
+
+    width: 390px;
+    height: 280px;
+    border: none;
+   overflow: hidden;
+
+}
+/*
+iframe#frame-spec::-webkit-scrollbar {
+    display: none;
+}
+*/

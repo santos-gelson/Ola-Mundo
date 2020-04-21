@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Teste Javascrip 2</title>
+    <script>
+
+        var quebrada = false;
+
+        function mudaLampada(tipo) {
+              
+            if (!quebrada) {
+            document.getElementById("luz").src ="_imagens/" + tipo + ".jpg";
+             if (tipo=='lampada-quebrada') {quebrada = true;}
+        }
+        }
+        
+
+        
+
+    </script>
+</head>
+
+<body>
+<h1>Acenda a lâmpada</h1>
+<img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')"/>
+
+<!-- função mudaLampada quando mover o mouse sobre a lâmpada produz o estado 1 (lampada acesa) quando retirar o mouse de sobre a lâmpada produz o estado 2 (apaga lampada) e quando clicar sobre a lampada produz o estado 3 (quebra lâmpada).-->
+<!-- Na chamada da função mudaLampada colocamos o parametro chamado tipo que recebera o estado do mouse-->
+
+<!-- Este código faz exatamente a mesma coisa que o anterior, mas usa passagem de parâmetros. Têm os mesmos defeitos também.-->
+
+<!-- Fora da função mudaLampada vamos por uma variável que indica o estado quebrado.-->
+
+<!-- Neste arquivo fizemos uma simplificação de código usado recurso de concatenação de strings.-->
+</body>
+
+
+
+
+</html>

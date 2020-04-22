@@ -46,7 +46,7 @@
  <!-- Agora vamos inserir uma imagem com a tag <img src="_caminho/foto"-->
  
  <!-- Identificando a imagem para poder manipulá-la com configurações css -->
- <img id="icone" src="_imagens/glass-oculos-preto-peq.png"> 
+ <img id="icone" src="_imagens/especificacoes.png"> 
  
  <nav id=menu>
  <!-- Construindo o menu-->
@@ -87,7 +87,16 @@
     <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações. </p>
     <section id="conteudo">
 
-        <img src="_imagens/glass-esquema-marcado.jpg"/>
+        <img src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa" />
+        <!-- Mapeando imagem em html com a tag <map>-->
+            <!-- É preciso fazer uma relação entre a imagem e o mapa como 'name=meumapa'-->
+            <map name="meumapa">
+                    <area shape="rect" coords="179,202,270,270" href="google-glass.html#tela" target="janela" />
+                    <area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="janela" />
+                    <area shape="circle" coords="73,52,12" href="google-glass.html#bateria" target="janela" />
+                    <area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensores" target="janela" />
+
+            </map>
         <iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
     </section>
 </article>

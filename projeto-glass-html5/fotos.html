@@ -12,6 +12,7 @@
      <!--Área para formatação geral de estilos do texto em css3-->
      <!-- Removemos a tag estilo do arquivo index e colocamos no arquivo estilo.css e indicamos aqui o caminho com tag <link>-->
      <link rel="stylesheet"  href="_css/estilo.css"/>
+     <link rel="stylesheet" href="_css/fotos.css"/>
  
      <!-- liga o estilo em estilo.css na página index (o parâmetro type="text/css" agora é opcional e pode ser omitido-->
    
@@ -45,7 +46,7 @@
  <!-- Agora vamos inserir uma imagem com a tag <img src="_caminho/foto"-->
  
  <!-- Identificando a imagem para poder manipulá-la com configurações css -->
- <img id="icone" src="_imagens/glass-oculos-preto-peq.png"> 
+ <img id="icone" src="_imagens/fotos.png"> 
  
  <nav id=menu>
  <!-- Construindo o menu-->
@@ -64,19 +65,34 @@
  <!--====== -->
      </header>
 
-Glass > Fotos
-Galeria de Imagens do Google Glass
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+<section id="corpo-full">
 
-Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.
+    <article id=noticia-principal>
 
-- Agenda e lembretes
-- Sergey Brin usando o Glass
-- Leve e compacto
-- Sensação de uma tela de 50"
-- Vários tipos de lente
-- Informações importantes
+        <!-- Criando um cabeçalho específico para a tag <hgroup para resolver o conflito da formatação h2 para a frase por Guanabara -->
+            <!-- A seçao tem um artigo e esse artigo tem um cabeçalho, vamos formatar esse cabeçalho.-->
+            <header id="cabecalho-artigo">
+                <hgroup>     
+                    <h3>Glass > Fotos</h3>
+                    <h1>Galeria de Imagens do Google Glass</h1>
+                    <h2>por Gustavo Guanabara </h2>
+                    <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+                </hgroup>
+            </header>
+
+
+<p>Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais características do Google Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve descrição.
+</p>
+<!-- Criando uma lista não numerada-->
+<!-- Transformar cada um deste bullets em um album de fotos-->
+<ul id="album-fotos">
+<li id="foto01" ><span> Agenda e lembretes</span></li>
+<li id="foto02"><span>Sergey Brin usando o Glass</span></li>
+<li id="foto03"><span> Leve e compacto</span></li>
+<li id="foto04"><span> Sensação de uma tela de 50"</span></li>
+<li id="foto05"><span> Vários tipos de lente</span></li>
+<li id="foto06"><span> Informações importantes</span></li>
+</ul>
 
 <footer id="rodape">
 

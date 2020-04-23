@@ -1,101 +1,147 @@
- <!-- Tag para indicar site em HTML5-->
- <!DOCTYPE html>
+<!-- Tag para indicar site em HTML5-->
+<!DOCTYPE html>
 
- <html lang=pt-br>
- <!-- Implementando as áreas de cabeçalho <head> e <body>-->
- 
- <head>
- <!-- conjunto de caracteres latino-->
-     <meta charset="UTF-8"/>
- <!-- Colocar título na pagina <title-->
-     <title> Tudo sobre Google Glass</title>
-     <!--Área para formatação geral de estilos do texto em css3-->
-     <!-- Removemos a tag estilo do arquivo index e colocamos no arquivo estilo.css e indicamos aqui o caminho com tag <link>-->
-     <link rel="stylesheet"  href="_css/estilo.css"/>
- 
-     <!-- liga o estilo em estilo.css na página index (o parâmetro type="text/css" agora é opcional e pode ser omitido-->
-   
- 
- <script language="javascript" src="_javascript/funcoes.js">  </script>
- 
- 
- </head>
- 
- <body>
- 
- <!-- Criar uma divisão da página usando a tag <div> dentro da área body-->
- <!-- Identicar esta div com <div id="interface"-->
-  <!-- Estamos criando uma delimitação para o site-->
- 
- <div
-  id="interface">
- 
- <!-- Identificado os títulos e suas hierarquias com <h1>, <h2>, <h3> ...-->
- <!-- Como estes dois títulos pertence a um mesmo grupo, vamos agrupá-los com a tag <hgroup> Isto tem um significado semantico para o navegador mas não altera  formatação-->         
+<html lang=pt-br>
+<!-- Implementando as áreas de cabeçalho <head> e <body>-->
+
+<head>
+<!-- conjunto de caracteres latino-->
+    <meta charset="UTF-8"/>
+<!-- Colocar título na pagina <title-->
+    <title> Tudo sobre Google Glass</title>
+    <!--Área para formatação geral de estilos do texto em css3-->
+    <!-- Removemos a tag estilo do arquivo index e colocamos no arquivo estilo.css e indicamos aqui o caminho com tag <link>-->
+    <link rel="stylesheet"  href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/form.css"/>
+
+    <!-- liga o estilo em estilo.css na página index (o parâmetro type="text/css" agora é opcional e pode ser omitido-->
+  
+
+<script language="javascript" src="_javascript/funcoes.js">  </script>
+
+
+</head>
+
+<body>
+
+<!-- Criar uma divisão da página usando a tag <div> dentro da área body-->
+<!-- Identicar esta div com <div id="interface"-->
+ <!-- Estamos criando uma delimitação para o site-->
+
+<div
+ id="interface">
+
+<!-- Identificado os títulos e suas hierarquias com <h1>, <h2>, <h3> ...-->
+<!-- Como estes dois títulos pertence a um mesmo grupo, vamos agrupá-los com a tag <hgroup> Isto tem um significado semantico para o navegador mas não altera  formatação-->         
+    
+<!-- Delimitando a área de cabeçalho observado o projeto; entre ===== --com a tag header>
+    <!-- ====== -->
+    <header id="cabecalho">
+    <hgroup>
+        <h1>Google Glass</h1>
+        <h2>A revolução do Google está chegando</h2>
      
- <!-- Delimitando a área de cabeçalho observado o projeto; entre ===== --com a tag header>
-     <!-- ====== -->
-     <header id="cabecalho">
-     <hgroup>
-         <h1>Google Glass</h1>
-         <h2>A revolução do Google está chegando</h2>
+    </hgroup>
+
+<!-- Agora vamos inserir uma imagem com a tag <img src="_caminho/foto"-->
+
+<!-- Identificando a imagem para poder manipulá-la com configurações css -->
+<img id="icone" src="_imagens/contato.png"> 
+
+<nav id=menu>
+<!-- Construindo o menu-->
+<!--Aperfeiçoando o menu ** menu flutuante-->
+<h1>Menu Principal</h1>  
+<ul>
+    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png ')"><a href="index.html">Home</a></li>
+    <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png ')"><a href="specs.html">Especificações</a></li>
+    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png ')"><a href="fotos.html">Fotos</a></li>
+    <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png ')"><a href="multimidia.html">Multimídia</a></li>
+    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png ')"><a href="fale-conosco.html">Fale conosco</a></li>
+</ul>
+
+</nav>
+
+<!--====== -->
+    </header>
+
+<section id="corpo-full">
+
+   <article id=noticia-principal>
+
+       <!-- Criando um cabeçalho específico para a tag <hgroup para resolver o conflito da formatação h2 para a frase por Guanabara -->
+           <!-- A seçao tem um artigo e esse artigo tem um cabeçalho, vamos formatar esse cabeçalho.-->
+           <header id="cabecalho-artigo">
+               <hgroup>     
+                   <h3>Fale Conosco > Contato</h3>
+                   <h1>Formulário de Contato</h1>
+                   <h2>por Gustavo Guanabara </h2>
+                   <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+               </hgroup>
+           </header>
+ 
       
-     </hgroup>
- 
- <!-- Agora vamos inserir uma imagem com a tag <img src="_caminho/foto"-->
- 
- <!-- Identificando a imagem para poder manipulá-la com configurações css -->
- <img id="icone" src="_imagens/glass-oculos-preto-peq.png"> 
- 
- <nav id=menu>
- <!-- Construindo o menu-->
- <!--Aperfeiçoando o menu ** menu flutuante-->
- <h1>Menu Principal</h1>  
- <ul>
-     <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png ')"><a href="index.html">Home</a></li>
-     <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png ')"><a href="specs.html">Especificações</a></li>
-     <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png ')"><a href="fotos.html">Fotos</a></li>
-     <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png ')"><a href="multimidia.html">Multimídia</a></li>
-     <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png ')"><a href="fale-conosco.html">Fale conosco</a></li>
- </ul>
- 
- </nav>
- 
- <!--====== -->
-     </header>
+   </section>
+</article>
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+</section>
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
 
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
 
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
+<!-- Início da área de formulário-->
+<form method="POST" id="fContato" action="mailto:gpsantos@vivaldi.net">
 
+<fieldset id="usuario" >
+    <legend>Nome do Usuário</legend>
+    <p><label for="cNome"> Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="nome completo" /></p>
+    <p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos" /> </p>
+    <p><label for="cEmail">-mail: </label></label><input type="email" name="tEmail" id="cEmail" size="20" maxlength="40" placeholder="joão@hostnet.com" /> </p>
+<fieldset id="sexo"> <legend> Sexo:</legend>
+     <input type="radio" name="tSexo" id="cMasc" /> <label for="cMasc">Masculino</label> <br>
+    <input type="radio" name="tSexo" id="cFem" /> <label for="cFem">Feminino</label> </fieldset>
+    <p><label for="cNasc">Data de Nascimento:</label> <input type="date" name="tNasc" id="cNasc" </p>
+</fieldset>
+
+<fieldset id="endereco" >
+    <legend>Endereço do Usuário</legend>
+    <p><label for="cRua">Logradouro:</label> <input type="text" name="tRua" id="cRua" size="20" maxlength="80" placeholder="rua, av. trav." /> </p>
+    <p><label for="cNume">Número:</label> <input type="number" name="tNume" id="cNume" min="0" maxlength="999999" /> </p>
+    <p><label for="cEst">Estado:</label>
+    <select name="tEst" id="cEst" >
+        <optgroup label="Região Sudeste" >
+            <option>Rio de Janeiro</option>
+            <option>São Paulo</option>
+            <option>Minas gerais</option>
+        </optgroup>
+        
+        <optgroup label="Região Sul" >
+            <option>Paraná</option>
+            <option>Santa Catarina</option>
+            <option selected>Rio Grande do Sul</option>
+        </optgroup>
+    </select>
+    </p>
+    <p><label for="cCid">Cidade:</label></p>
+</fieldset>
+
+<fieldset id="mensagem" >
+    <legend>Mensagem do Usuário</legend>
+    <p><label for="cUrg">Grau de Urgência:</label></p>
+    <p><label for="cMsg">Mensagem:</label></p>
+</fieldset>
+
+<fieldset id="pedido" >
+    <legend>Quero um Google Glass</legend>
+    <p><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+    <p><label for="cCor">Cor:</label></p>
+    <p><label for="cQtd">Quantidade:</label></p>
+    <p><label for="cTot">Preço Total: R$</label></p>
+</fieldset>
 
 [BOTÃO ENVIAR]
+
+</form>
 
 <footer id="rodape">
 
